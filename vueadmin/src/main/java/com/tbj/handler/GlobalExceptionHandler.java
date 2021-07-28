@@ -15,7 +15,7 @@ public class GlobalExceptionHandler {
     @ExceptionHandler(Exception.class)
     public Result GlobalException(Exception e){
         Result result = new Result();
-        result.setCode("400");
+        result.setCode(400);
         result.setMsg(e.getMessage());
         return result;
     }
