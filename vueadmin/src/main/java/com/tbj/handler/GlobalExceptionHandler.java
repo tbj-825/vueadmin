@@ -10,7 +10,6 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 public class GlobalExceptionHandler {
 
 
-
     @ResponseStatus(HttpStatus.BAD_REQUEST)
     @ExceptionHandler(Exception.class)
     public Result GlobalException(Exception e){
@@ -19,4 +18,8 @@ public class GlobalExceptionHandler {
         result.setMsg(e.getMessage());
         return result;
     }
+
+
+
+
 }
